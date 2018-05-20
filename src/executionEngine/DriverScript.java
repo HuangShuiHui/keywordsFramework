@@ -24,7 +24,7 @@ public class DriverScript {
 		Thread.sleep(2000);
 		
 		
-		driver.findElement(By.xpath(".//*[@id='u1']/a[text()='��¼']")).click();
+		driver.findElement(By.xpath(".//*[@id='u1']/a[text()='登录']")).click();
 		
 		
 		driver.findElement(By.id("TANGRAM__PSP_10__footerULoginBtn")).click();
@@ -35,6 +35,8 @@ public class DriverScript {
 		
 		
 		driver.findElement(By.id("TANGRAM__PSP_10__submit")).click();
+		
+		driver.close();
 		
 	}
 }
